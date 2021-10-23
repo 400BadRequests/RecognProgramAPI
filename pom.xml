@@ -46,7 +46,6 @@
         <dependency>
             <groupId>org.springframework.experimental</groupId>
             <artifactId>spring-native</artifactId>
-            <version>${spring-native.version}</version>
         </dependency>
 
         <dependency>
@@ -100,7 +99,6 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
-                    <classifier>${repackage.classifier}</classifier>
                     <image>
                         <builder>paketobuildpacks/builder:tiny</builder>
                         <env>
@@ -112,7 +110,6 @@
             <plugin>
                 <groupId>org.springframework.experimental</groupId>
                 <artifactId>spring-aot-maven-plugin</artifactId>
-                <version>${spring-native.version}</version>
                 <executions>
                     <execution>
                         <id>test-generate</id>
@@ -131,7 +128,6 @@
             <plugin>
                 <groupId>org.hibernate.orm.tooling</groupId>
                 <artifactId>hibernate-enhance-maven-plugin</artifactId>
-                <version>${hibernate.version}</version>
                 <executions>
                     <execution>
                         <id>enhance</id>
@@ -182,7 +178,6 @@
                 <dependency>
                     <groupId>org.graalvm.buildtools</groupId>
                     <artifactId>junit-platform-native</artifactId>
-                    <version>${native-buildtools.version}</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -191,7 +186,6 @@
                     <plugin>
                         <groupId>org.graalvm.buildtools</groupId>
                         <artifactId>native-maven-plugin</artifactId>
-                        <version>${native-buildtools.version}</version>
                         <executions>
                             <execution>
                                 <id>test-native</id>
