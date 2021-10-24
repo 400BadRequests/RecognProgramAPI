@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>API_ReconhecimentoGestos</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>war</packaging>
     <properties>
         <java.version>11</java.version>
         <repackage.classifier/>
@@ -78,6 +79,7 @@
     </dependencies>
 
     <build>
+        <finalName>recognition-program</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
