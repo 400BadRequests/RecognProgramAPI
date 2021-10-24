@@ -200,9 +200,6 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
-        <profile>
-            <id>native</id>
             <dependencies>
                 <dependency>
                     <groupId>org.springframework.experimental</groupId>
