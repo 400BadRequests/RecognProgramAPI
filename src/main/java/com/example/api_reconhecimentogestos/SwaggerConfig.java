@@ -29,7 +29,6 @@ public class SwaggerConfig {
                 .globalResponseMessage(RequestMethod.GET, responseMessageForGET());
     }
 
-    @Bean
     private List<ResponseMessage> responseMessageForGET()
     {
         return new ArrayList<ResponseMessage>() {{
