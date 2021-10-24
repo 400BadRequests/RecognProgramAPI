@@ -210,6 +210,9 @@
                     <version>${spring-native.version}</version>
                 </dependency>
             </dependencies>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>local</id>
