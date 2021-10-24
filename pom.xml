@@ -101,7 +101,7 @@
             <plugin>
                 <groupId>org.springframework.experimental</groupId>
                 <artifactId>spring-aot-maven-plugin</artifactId>
-                <version>0.10.4</version>
+                <version>${spring-native.version}</version>
                 <executions>
                     <execution>
                         <id>test-generate</id>
@@ -120,7 +120,7 @@
             <plugin>
                 <groupId>org.hibernate.orm.tooling</groupId>
                 <artifactId>hibernate-enhance-maven-plugin</artifactId>
-                <version>5.4.16.Final</version>
+                <version>${hibernate.version}</version>
                 <executions>
                     <execution>
                         <id>enhance</id>
@@ -171,7 +171,7 @@
                 <dependency>
                     <groupId>org.graalvm.buildtools</groupId>
                     <artifactId>junit-platform-native</artifactId>
-                    <version>0.9.3</version>
+                    <version>${native-buildtools.version}</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
@@ -185,7 +185,7 @@
                     <plugin>
                         <groupId>org.graalvm.buildtools</groupId>
                         <artifactId>native-maven-plugin</artifactId>
-                        <version>0.9.3</version>
+                        <version>${native-buildtools.version}</version>
                         <executions>
                             <execution>
                                 <id>test-native</id>
